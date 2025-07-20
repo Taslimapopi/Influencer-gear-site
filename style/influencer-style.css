@@ -147,13 +147,19 @@ header,footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: rgba(170, 170, 170, 1);
+        background-color:rgba(7, 5, 35, 0.99);
         color: #FFFFFF;
         
     }
    .footer-content{
     margin: 50px auto;
    }
+   .socialmedia-icon{
+    filter: brightness(0) invert(1);
+   }
+
+
+/* Responsive style */
 
  @media screen and (max-width: 576px){
     .navbar, .navlist{
@@ -179,11 +185,15 @@ header,footer{
    }
 
    .ecommerce-img{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
-    margin: auto 20px;
+    margin: auto 20px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
    }
 
     .collection-gallery{
