@@ -111,6 +111,8 @@ header,footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    /* padding: 50px auto; */
+    margin: 30px auto;
  }
  .collection-cards{
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -135,6 +137,23 @@ header,footer{
     font-weight: 700;
 
  }
+ .see-more{
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+    font-weight: 700;
+ }
+
+  footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(170, 170, 170, 1);
+        color: #FFFFFF;
+        
+    }
+   .footer-content{
+    margin: 50px auto;
+   }
 
  @media screen and (max-width: 576px){
     .navbar, .navlist{
@@ -167,7 +186,12 @@ header,footer{
     margin: auto 20px;
    }
 
-    
+    .collection-gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .collection-cards{
+        margin: 0 auto;
+    }
    
     
  }
